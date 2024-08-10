@@ -11,6 +11,9 @@ body{
     justify-content: space-between;
     border-bottom:solid black 2px;
     gap:10px;
+    position: sticky;
+    top:0;
+    background-color: aliceblue;
 }
 .navbar__1__title{
     color:blueviolet;
@@ -22,10 +25,12 @@ body{
     width:60%;
     display:flex;
     gap:10px;
+    
 }
 .navbar__2 input{
     border:none;
     width:50%;
+    background-color: transparent;
 }
 .navbar__2 input:focus{
     outline:none;
@@ -47,6 +52,14 @@ body{
     color:white;
     border-radius: 10px;
     padding: 5px;
+    cursor: pointer;
+    border:solid blueviolet 1px;
+}
+.categories p:hover{
+   background-color: transparent;
+   color:black;
+   border:solid blueviolet 1px;
+   transition: 2s;
 }
 .image img{
     width:100%;
@@ -104,6 +117,32 @@ body{
     flex-basis:25%;
     padding:10px;
  }
+ .sale-img{
+    background-color: white;
+    border: solid black 1px;
+    border-radius:10px ;
+    position: relative;
+    bottom:100px;
+    left:30px;
+    width: fit-content;
+    padding:10px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+ }
+ @keyframes zoom{
+   0% {
+
+      opacity: 0;
+      transform: scale(0);
+   
+    }
+    100%{
+   opacity: 1;
+   transform: scale(1);
+} }
+ 
 
  
  
