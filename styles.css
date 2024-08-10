@@ -41,6 +41,9 @@ body{
     flex-direction: row;
     align-items: center;
 }
+.navbar__4{
+   display: none;
+}
 .categories{
     display:flex;
     justify-content: space-between;
@@ -72,7 +75,9 @@ body{
    height:50%;
  }
  .course-card{
-    width:200px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
  }
  .recommend__container{
     display: flex;
@@ -142,6 +147,23 @@ body{
    opacity: 1;
    transform: scale(1);
 } }
+@media screen and (max-width:600px){
+
+   body{
+      font-size: 10px;
+   }
+   .course-card{
+      flex-basis: 40%;
+   }
+   .navbar__2,.navbar__3{
+      display: none;
+   }
+   .navbar__4{
+      display:block;
+   }
+
+}
+
  
 
  
